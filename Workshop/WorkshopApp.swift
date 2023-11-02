@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct WorkshopApp: App {
+
     var body: some Scene {
         WindowGroup {
-            LoginView().preferredColorScheme(.dark)
+            NavigationStack {
+                LoginView()
+            }
+            .preferredColorScheme(.dark)
         }
     }
 }

@@ -22,6 +22,7 @@ struct ProfileView: View {
             Spacer(minLength: 10)
         }
         .padding(16)
+        .navigationBarBackButtonHidden()
     }
 }
 

@@ -14,6 +14,8 @@ struct LoginView: View {
     @State private var rememberMe: Bool = true
     @State private var termsAccepted: Bool = false
 
+    @State private var profile: Profile?
+
     var body: some View {
         VStack(spacing: 50) {
             HeaderView(date: .now, title: "Welcome", profileImage: "profile")
@@ -25,10 +27,19 @@ struct LoginView: View {
             Spacer(minLength: 10)
             VStack(spacing: 0) {
                 CheckboxToggle(isOn: $termsAccepted, title: "I accept terms and conditions")
-                PrimaryButton(title: "Login", action: { }).disabled(!termsAccepted)
+                PrimaryButton(title: "Login", action: { profile = .init(name: "\(firstName) \(lastName)") })
+                    .disabled(!validate())
+                    .navigationDestination(item: $profile, destination: { ProfileView(profile: $0) })
             }
         }
-        .padding()
+        .padding(16)
+    }
+}
+
+private extension LoginView {
+
+     func validate() -> Bool {
+        return termsAccepted && !firstName.isEmpty && !lastName.isEmpty
     }
 }
 
