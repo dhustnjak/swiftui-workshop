@@ -19,9 +19,9 @@ struct ProfileView: View {
                 DescriptionView(title: "DoB", value: profile.birth)
                 DescriptionView(title: "Current weight", value: profile.weight)
             }
-            Spacer()
+            Spacer(minLength: 10)
         }
-        .padding()
+        .padding(16)
     }
 }
 
@@ -33,7 +33,7 @@ private struct DescriptionView: View {
     var body: some View {
         HStack(spacing: 0) {
             Text(title)
-            Spacer()
+            Spacer(minLength: 10)
             Text(value)
         }
         .font(.headline)

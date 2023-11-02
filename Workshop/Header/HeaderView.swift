@@ -21,12 +21,12 @@ struct HeaderView: View {
                 .font(.caption)
             HStack(spacing: 0) {
                 Text(title).font(.largeTitle)
-                Spacer()
+                Spacer(minLength: 10)
                 Image(profileImage)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 36, height: 36)
-                    .cornerRadius(50)
+                    .clipShape(RoundedRectangle(cornerRadius: 50))
             }
         }
     }
