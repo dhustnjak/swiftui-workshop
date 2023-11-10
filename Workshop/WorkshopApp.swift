@@ -15,7 +15,6 @@ struct WorkshopApp: App {
             NavigationStack {
                 LoginView()
             }
-            .preferredColorScheme(.dark)
         }
     }
 }
