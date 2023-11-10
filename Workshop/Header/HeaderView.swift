@@ -26,7 +26,7 @@ struct HeaderView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 36, height: 36)
-                    .clipShape(RoundedRectangle(cornerRadius: 50))
+                    .clipShape(.rect(cornerRadius: 50))
             }
         }
     }

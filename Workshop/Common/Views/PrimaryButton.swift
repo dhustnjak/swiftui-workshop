@@ -30,7 +30,7 @@ private struct PrimaryButtonStyle: ButtonStyle {
             .frame(maxWidth: .infinity)
             .background(.limeGreen)
             .opacity(isEnabled ? 1 : 0.5)
-            .clipShape(RoundedRectangle(cornerRadius: 14))
+            .clipShape(.rect(cornerRadius: 14))
             .scaleEffect(.init(configuration.isPressed ? 0.97 : 1))
     }
 }

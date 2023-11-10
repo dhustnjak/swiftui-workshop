@@ -33,6 +33,7 @@ struct LoginView: View {
             }
         }
         .padding(16)
+        .preferredColorScheme(.dark)
     }
 }
 
