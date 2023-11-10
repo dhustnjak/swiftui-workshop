@@ -13,6 +13,10 @@
 		CC74E7CB2AEB0A5D0076D464 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC74E7C92AEB0A5D0076D464 /* Profile.swift */; };
 		CC74E7CC2AEB0A5D0076D464 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC74E7CA2AEB0A5D0076D464 /* ProfileView.swift */; };
 		CC74E7CE2AEB0A640076D464 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC74E7CD2AEB0A640076D464 /* HeaderView.swift */; };
+		CC88F3BD2AF180E200FC41FD /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC88F3BC2AF180E200FC41FD /* LoginView.swift */; };
+		CC88F3BF2AF3AE2A00FC41FD /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC88F3BE2AF3AE2A00FC41FD /* PrimaryButton.swift */; };
+		CC88F3C12AF3AE6700FC41FD /* CheckboxToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC88F3C02AF3AE6700FC41FD /* CheckboxToggle.swift */; };
+		CC88F3C32AF3D26D00FC41FD /* FocusedTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC88F3C22AF3D26D00FC41FD /* FocusedTextFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		CC74E7C92AEB0A5D0076D464 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		CC74E7CA2AEB0A5D0076D464 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CC74E7CD2AEB0A640076D464 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		CC88F3BC2AF180E200FC41FD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CC88F3BE2AF3AE2A00FC41FD /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		CC88F3C02AF3AE6700FC41FD /* CheckboxToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxToggle.swift; sourceTree = "<group>"; };
+		CC88F3C22AF3D26D00FC41FD /* FocusedTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedTextFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,8 @@
 		CC74E7B82AEB081C0076D464 /* Workshop */ = {
 			isa = PBXGroup;
 			children = (
+				CC88F3C42AF3DDEB00FC41FD /* Common */,
+				CC88F3BB2AF180D500FC41FD /* Login */,
 				CC74E7C82AEB0A0C0076D464 /* Profile */,
 				CC74E7C72AEB0A050076D464 /* Header */,
 				CC74E7B92AEB081C0076D464 /* WorkshopApp.swift */,
@@ -87,6 +97,40 @@
 				CC74E7CA2AEB0A5D0076D464 /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		CC88F3BB2AF180D500FC41FD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CC88F3BC2AF180E200FC41FD /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CC88F3C42AF3DDEB00FC41FD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CC88F3C52AF3DEC900FC41FD /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CC88F3C52AF3DEC900FC41FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC88F3C02AF3AE6700FC41FD /* CheckboxToggle.swift */,
+				CC88F3BE2AF3AE2A00FC41FD /* PrimaryButton.swift */,
+				CC88F3C62AF3DED600FC41FD /* Modifiers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC88F3C62AF3DED600FC41FD /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				CC88F3C22AF3D26D00FC41FD /* FocusedTextFieldModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,10 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC88F3BF2AF3AE2A00FC41FD /* PrimaryButton.swift in Sources */,
 				CC74E7BA2AEB081C0076D464 /* WorkshopApp.swift in Sources */,
+				CC88F3C32AF3D26D00FC41FD /* FocusedTextFieldModifier.swift in Sources */,
 				CC74E7CC2AEB0A5D0076D464 /* ProfileView.swift in Sources */,
 				CC74E7CB2AEB0A5D0076D464 /* Profile.swift in Sources */,
+				CC88F3BD2AF180E200FC41FD /* LoginView.swift in Sources */,
 				CC74E7CE2AEB0A640076D464 /* HeaderView.swift in Sources */,
+				CC88F3C12AF3AE6700FC41FD /* CheckboxToggle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,21 +7,28 @@
 
 import Foundation
 
-struct Profile {
+struct Profile: Hashable {
+
     let name: String
     let birth: String
     let image: String
     let weight: String
+
+    init(name: String,
+         birth: String = "Infinity",
+         image: String = "profile",
+         weight: String = "Lightweight"
+    ) {
+        self.name = name
+        self.birth = birth
+        self.image = image
+        self.weight = weight
+    }
 }
 
 extension Profile {
 
     static var preview: Self {
-        return .init(
-            name: "Paul Hudson",
-            birth: "Infinity",
-            image: "profile",
-            weight: "Lightweight"
-        )
+        return .init(name: "Paul Hudson")
     }
 }

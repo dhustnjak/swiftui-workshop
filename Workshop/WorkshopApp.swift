@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct WorkshopApp: App {
+
     var body: some Scene {
         WindowGroup {
-            ProfileView(profile: .preview)
+            NavigationStack {
+                LoginView()
+            }
         }
     }
 }
