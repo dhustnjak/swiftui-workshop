@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC59B7F92AFD642A008480DF /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59B7F82AFD642A008480DF /* WorkoutView.swift */; };
+		CC59B7FB2AFD644F008480DF /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59B7FA2AFD644F008480DF /* Workout.swift */; };
+		CC59B7FE2AFD6958008480DF /* MyWorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59B7FD2AFD6958008480DF /* MyWorkoutsView.swift */; };
+		CC59B8012AFD7C93008480DF /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC59B8002AFD7C93008480DF /* TabBarView.swift */; };
 		CC74E7BA2AEB081C0076D464 /* WorkshopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC74E7B92AEB081C0076D464 /* WorkshopApp.swift */; };
 		CC74E7BE2AEB081D0076D464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC74E7BD2AEB081D0076D464 /* Assets.xcassets */; };
 		CC74E7C12AEB081D0076D464 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC74E7C02AEB081D0076D464 /* Preview Assets.xcassets */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC59B7F82AFD642A008480DF /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		CC59B7FA2AFD644F008480DF /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		CC59B7FD2AFD6958008480DF /* MyWorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkoutsView.swift; sourceTree = "<group>"; };
+		CC59B8002AFD7C93008480DF /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		CC74E7B62AEB081C0076D464 /* Workshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Workshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC74E7B92AEB081C0076D464 /* WorkshopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkshopApp.swift; sourceTree = "<group>"; };
 		CC74E7BD2AEB081D0076D464 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +52,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC59B7FC2AFD6941008480DF /* MyWorkouts */ = {
+			isa = PBXGroup;
+			children = (
+				CC59B8042AFD8473008480DF /* Workout */,
+				CC59B7FD2AFD6958008480DF /* MyWorkoutsView.swift */,
+			);
+			path = MyWorkouts;
+			sourceTree = "<group>";
+		};
+		CC59B7FF2AFD7C79008480DF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CC59B7FC2AFD6941008480DF /* MyWorkouts */,
+				CC74E7C82AEB0A0C0076D464 /* Profile */,
+				CC59B8002AFD7C93008480DF /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CC59B8042AFD8473008480DF /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+				CC59B7F82AFD642A008480DF /* WorkoutView.swift */,
+				CC59B7FA2AFD644F008480DF /* Workout.swift */,
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
 		CC74E7AD2AEB081C0076D464 = {
 			isa = PBXGroup;
 			children = (
@@ -64,9 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				CC88F3C42AF3DDEB00FC41FD /* Common */,
-				CC88F3BB2AF180D500FC41FD /* Login */,
-				CC74E7C82AEB0A0C0076D464 /* Profile */,
 				CC74E7C72AEB0A050076D464 /* Header */,
+				CC88F3BB2AF180D500FC41FD /* Login */,
+				CC59B7FF2AFD7C79008480DF /* TabBar */,
 				CC74E7B92AEB081C0076D464 /* WorkshopApp.swift */,
 				CC74E7BD2AEB081D0076D464 /* Assets.xcassets */,
 				CC74E7BF2AEB081D0076D464 /* Preview Content */,
@@ -93,8 +129,8 @@
 		CC74E7C82AEB0A0C0076D464 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				CC74E7C92AEB0A5D0076D464 /* Profile.swift */,
 				CC74E7CA2AEB0A5D0076D464 /* ProfileView.swift */,
+				CC74E7C92AEB0A5D0076D464 /* Profile.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -206,10 +242,14 @@
 				CC88F3BF2AF3AE2A00FC41FD /* PrimaryButton.swift in Sources */,
 				CC74E7BA2AEB081C0076D464 /* WorkshopApp.swift in Sources */,
 				CC88F3C32AF3D26D00FC41FD /* FocusedTextFieldModifier.swift in Sources */,
+				CC59B7FB2AFD644F008480DF /* Workout.swift in Sources */,
 				CC74E7CC2AEB0A5D0076D464 /* ProfileView.swift in Sources */,
+				CC59B7FE2AFD6958008480DF /* MyWorkoutsView.swift in Sources */,
+				CC59B7F92AFD642A008480DF /* WorkoutView.swift in Sources */,
 				CC74E7CB2AEB0A5D0076D464 /* Profile.swift in Sources */,
 				CC88F3BD2AF180E200FC41FD /* LoginView.swift in Sources */,
 				CC74E7CE2AEB0A640076D464 /* HeaderView.swift in Sources */,
+				CC59B8012AFD7C93008480DF /* TabBarView.swift in Sources */,
 				CC88F3C12AF3AE6700FC41FD /* CheckboxToggle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

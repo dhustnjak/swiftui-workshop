@@ -18,7 +18,7 @@ struct LoginView: View {
 
     var body: some View {
         VStack(spacing: 50) {
-            HeaderView(date: .now, title: "Welcome", profileImage: "profile")
+            HeaderView(title: "Welcome")
             VStack(spacing: 20) {
                 LoginTextField(input: $firstName, title: "First name", placeholder: "Paul", focusOnAppear: true)
                 LoginTextField(input: $lastName, title: "Last name", placeholder: "Hudson")
@@ -28,8 +28,8 @@ struct LoginView: View {
             VStack(spacing: 0) {
                 CheckboxToggle(isOn: $termsAccepted, title: "I accept terms and conditions")
                 PrimaryButton(title: "Login", action: { profile = .init(name: "\(firstName) \(lastName)") })
-                    .disabled(!validate())
-                    .navigationDestination(item: $profile, destination: { ProfileView(profile: $0) })
+                    .disabled(!validated())
+                    .navigationDestination(item: $profile, destination: { TabBarView(profile: $0) })
             }
         }
         .padding(16)
@@ -38,7 +38,7 @@ struct LoginView: View {
 
 private extension LoginView {
 
-     func validate() -> Bool {
+     func validated() -> Bool {
         return termsAccepted && !firstName.isEmpty && !lastName.isEmpty
     }
 }
