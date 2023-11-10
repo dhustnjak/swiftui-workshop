@@ -9,20 +9,18 @@ import SwiftUI
 
 struct HeaderView: View {
 
-    let date: Date
     let title: String
-    let profileImage: String
 
     var body: some View {
         VStack(alignment: .leading, spacing: 5) {
-            Text(date.formatted)
+            Text(Date.now.formatted)
                 .textCase(.uppercase)
                 .foregroundStyle(.gray)
                 .font(.caption)
             HStack(spacing: 0) {
                 Text(title).font(.largeTitle)
                 Spacer(minLength: 10)
-                Image(profileImage)
+                Image("profile")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 36, height: 36)

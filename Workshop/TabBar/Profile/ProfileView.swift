@@ -13,7 +13,7 @@ struct ProfileView: View {
 
     var body: some View {
         VStack(spacing: 50) {
-            HeaderView(date: .now, title: "Your details", profileImage: profile.image)
+            HeaderView(title: "Your details")
             VStack(spacing: 20) {
                 DescriptionView(title: "Name", value: profile.name)
                 DescriptionView(title: "DoB", value: profile.birth)
@@ -22,7 +22,6 @@ struct ProfileView: View {
             Spacer(minLength: 10)
         }
         .padding(16)
-        .navigationBarBackButtonHidden()
     }
 }
 
